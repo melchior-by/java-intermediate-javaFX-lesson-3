@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="536.0" style="-fx-background-color: #F4F7FB;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ekids.testsystem.Controller">
+   <children>
+      <AnchorPane prefHeight="68.0" prefWidth="536.0" style="-fx-background-color: #fff;">
+         <effect>
+            <DropShadow color="#0000001f" />
+         </effect>
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="60.0" layoutX="24.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/listImage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="closeProgram" layoutX="344.0" layoutY="18.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #f7746a; -fx-border-color: #f7746a; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Закрыть программу" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Regular" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fill="#434343" layoutX="113.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Тесты по языку Java">
+         <font>
+            <Font name="Montserrat Bold" size="29.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radioBtn1" layoutX="37.0" layoutY="198.0" mnemonicParsing="false" text="Console.Write()" textFill="#5e5e5e">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="answers" />
+         </toggleGroup>
+      </RadioButton>
+      <Text fx:id="questionText" fill="#727272" layoutX="37.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В каком из вариантов представлен корректный формат вывода информации на экран?" wrappingWidth="494.8199462890625">
+         <font>
+            <Font name="Montserrat Regular" size="14.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="radioBtn2" layoutX="37.0" layoutY="230.0" mnemonicParsing="false" text="System.out.println()" textFill="#5e5e5e" toggleGroup="$answers">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioBtn3" layoutX="37.0" layoutY="263.0" mnemonicParsing="false" text="console.log()" textFill="#5e5e5e" toggleGroup="$answers">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radioBtn4" layoutX="37.0" layoutY="299.0" mnemonicParsing="false" text="print()" textFill="#5e5e5e" toggleGroup="$answers">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="answerBtn" layoutX="187.0" layoutY="384.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="175.0" style="-fx-background-color: #f7746a; -fx-border-color: #f7746a; -fx-border-radius: 5px;" stylesheets="@styles/main.css" text="Ответить" textFill="WHITE">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
